@@ -1,0 +1,6 @@
+2025-02-25T09:08:18.390-05:00  INFO 15060 --- [api-singleton-logger] [main] c.klinux.ApiSingletonLoggerApplication   : Starting ApiSingletonLoggerApplication using Java 17.0.12 with PID 15060 (D:\2-WorkSpaces\Wk-DesignPatters-Java\api-singleton-logger\target\classes started by klint in D:\2-WorkSpaces\Wk-DesignPatters-Java\api-singleton-logger)
+2025-02-25T09:08:18.392-05:00  INFO 15060 --- [api-singleton-logger] [main] c.klinux.ApiSingletonLoggerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-02-25T09:08:18.800-05:00  INFO 15060 --- [api-singleton-logger] [main] c.klinux.ApiSingletonLoggerApplication   : Started ApiSingletonLoggerApplication in 0.783 seconds (process running for 1.214)
+2025-02-25T09:08:18.805-05:00  INFO 15060 --- [api-singleton-logger] [main] com.klinux.log.LogManager                : Application Started
+2025-02-25T09:08:18.805-05:00  INFO 15060 --- [api-singleton-logger] [main] com.klinux.log.LogManager                : Performing some operation...
+2025-02-25T09:08:18.805-05:00  INFO 15060 --- [api-singleton-logger] [main] com.klinux.log.LogManager                : Application Finished
