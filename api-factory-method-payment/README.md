@@ -135,8 +135,11 @@ Access the payment processing endpoint using a browser or Postman:
 ```bash
 GET http://localhost:8080/processPayment?paymentMethod=creditcard&amount=100.0
 ```
-
+**paypal**
 ![Get Payment](https://github.com/klintfox/design-patterns/blob/main/api-factory-method-payment/src/main/resources/captures/1.PNG)
+
+**credit card**
+![Get Payment](https://github.com/klintfox/design-patterns/blob/main/api-factory-method-payment/src/main/resources/captures/2.PNG)
 
 
 ### Main Points of the Design
