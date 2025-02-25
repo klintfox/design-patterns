@@ -24,7 +24,7 @@ A singleton ensures there is only one instance of the database connection pool i
 In large enterprise applications, a singleton can be used to store and manage configuration settings globally, ensuring that all components access the same configuration object and preventing inconsistencies.
 3. Logging Systems
 A singleton logger is used across an application to ensure that only one instance handles log writing, reducing the complexity of managing multiple loggers and ensuring consistency in logging output.
-[Singleton Pattern](https://github.com/klintfox/design-patterns/tree/main/api-singleton-logger)
+[Logging Systems - Singleton Pattern](https://github.com/klintfox/design-patterns/tree/main/api-singleton-logger)
 4. Cache Management
 A singleton can be used to manage a global cache in an enterprise application, allowing all components to share the same cache instance and reduce the overhead of maintaining multiple caches.
 5. Session Management
