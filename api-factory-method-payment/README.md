@@ -136,6 +136,9 @@ Access the payment processing endpoint using a browser or Postman:
 GET http://localhost:8080/processPayment?paymentMethod=creditcard&amount=100.0
 ```
 
+![Get Payment](https://github.com/klintfox/design-patterns/blob/main/api-factory-method-payment/src/main/resources/captures/1.PNG)
+
+
 ### Main Points of the Design
 - Factory Method: The PaymentProcessorFactory decides which concrete payment processor to instantiate based on the input payment method (credit card, PayPal, or Stripe).
 - Spring Boot Integration: The factory and processors are managed as Spring beans using @Component and @Autowired.
