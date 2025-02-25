@@ -20,6 +20,8 @@ This repository explores several **creational design patterns**, which are used 
 - **Example:**  
   A logging class that writes logs to a file. You only want one instance of the logging class, and it should be accessible throughout the application. The Singleton ensures that no matter how many times the class is requested, only one instance is created.
 
+- **Code Example**
+[Singleton Pattern](https://github.com/klintfox/design-patterns/tree/main/api-singleton-logger)
 ---
 
 ### 2. Factory Method Pattern
