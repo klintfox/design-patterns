@@ -39,6 +39,8 @@ This repository explores several **creational design patterns**, which are used 
 - **Example:**  
   A UI framework might have a method to create buttons. The exact type of button, such as `WindowsButton` or `MacButton`, would be determined by the operating system and handled by subclasses.
 
+- **Code Example**
+[Factory Method Pattern](https://github.com/klintfox/design-patterns/tree/main/api-factory-method)
 ---
 
 ### 3. Abstract Factory Pattern
