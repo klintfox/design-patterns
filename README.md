@@ -99,6 +99,7 @@ A UI framework might have a method to create buttons. The exact type of button, 
 1. **GUI Frameworks (Cross-Platform UI)**
 Different platforms (Windows, macOS, Linux) have different UI components (buttons, text fields, etc.) that need to be created with a platform-specific style.
 A GUI framework can use an abstract factory to create buttons, text fields, and other UI elements tailored to the operating system (e.g., `WindowsFactory`, `MacFactory`, `LinuxFactory`).
+[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/api-abstract-factory-gui-framework)
 2. **Game Engines (Cross-Platform Games)**
 A game needs to render graphics, sound, and input on different platforms (PC, Xbox, PlayStation) with different hardware and APIs.
 A game engine can use abstract factories like `GraphicsFactory`, `SoundFactory`, `InputFactory` to provide platform-specific implementations (e.g., DirectX, OpenGL, PlayStation SDK).
