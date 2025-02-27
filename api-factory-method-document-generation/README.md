@@ -46,4 +46,4 @@ This project demonstrates a **Factory Method design pattern** to generate docume
 ```
 http://localhost:8080/documents/generate
 ```
-[Send and Download]()
+![Postman](https://github.com/klintfox/design-patterns/blob/main/api-factory-method-document-generation/src/main/resources/capture/1.PNG)
