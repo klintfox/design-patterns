@@ -97,34 +97,34 @@ A UI framework might have a method to create buttons. The exact type of button, 
 
 - **Example:**  
 1. **GUI Frameworks (Cross-Platform UI)**
-**Problem**: Different platforms (Windows, macOS, Linux) have different UI components (buttons, text fields, etc.) that need to be created with a platform-specific style.
+Different platforms (Windows, macOS, Linux) have different UI components (buttons, text fields, etc.) that need to be created with a platform-specific style.
 A GUI framework can use an abstract factory to create buttons, text fields, and other UI elements tailored to the operating system (e.g., `WindowsFactory`, `MacFactory`, `LinuxFactory`).
 2. **Game Engines (Cross-Platform Games)**
-**Problem**: A game needs to render graphics, sound, and input on different platforms (PC, Xbox, PlayStation) with different hardware and APIs.
+A game needs to render graphics, sound, and input on different platforms (PC, Xbox, PlayStation) with different hardware and APIs.
 A game engine can use abstract factories like `GraphicsFactory`, `SoundFactory`, `InputFactory` to provide platform-specific implementations (e.g., DirectX, OpenGL, PlayStation SDK).
 3. **Database Connectivity (Multiple Databases)**
-**Problem**: An application needs to interact with multiple types of databases (MySQL, PostgreSQL, Oracle), where each database has different ways to connect, query, and manage transactions.
+An application needs to interact with multiple types of databases (MySQL, PostgreSQL, Oracle), where each database has different ways to connect, query, and manage transactions.
 The abstract factory can create a family of objects like `Connection`, `Command`, and `Transaction` for each database type (e.g., `MySQLFactory`, `PostgreSQLFactory`, `OracleFactory`).
 4. **Web Development (Cross-Browser Compatibility)**
-**Problem**: Different browsers (Chrome, Firefox, Safari) may need different approaches to render elements or interact with JavaScript.
+Different browsers (Chrome, Firefox, Safari) may need different approaches to render elements or interact with JavaScript.
 A web framework could define an abstract factory to create browser-specific objects like `DOMManipulator`, `EventListener`, and `CSSRenderer`.
 5. **Document Processing (Different Formats)**
-**Problem**: A document processing application needs to generate or manipulate documents in different formats like PDF, DOCX, or HTML.
+A document processing application needs to generate or manipulate documents in different formats like PDF, DOCX, or HTML.
 An abstract factory could be used to produce objects like `Page`, `Header`, `Footer` that work differently based on the document format (e.g., `PDFFactory`, `DOCXFactory`, `HTMLFactory`).
 6. **Reporting Systems (Different Report Types)**
-**Problem**: A system needs to generate various report types such as CSV, PDF, or Excel, each requiring different rendering logic.
+A system needs to generate various report types such as CSV, PDF, or Excel, each requiring different rendering logic.
 An abstract factory could create objects like `ReportHeader`, `ReportBody`, and `ReportFooter` that are specific to each report format (e.g., `CSVReportFactory`, `PDFReportFactory`, `ExcelReportFactory`).
 7. **Network Protocols (Multiple Protocols)**
-**Problem**: An application needs to interact with multiple communication protocols such as HTTP, FTP, and WebSocket.
+An application needs to interact with multiple communication protocols such as HTTP, FTP, and WebSocket.
 An abstract factory can define methods to create protocol-specific objects, like `Request`, `Response`, and `Connection` for each protocol (e.g., `HTTPFactory`, `FTPFactory`, `WebSocketFactory`).
 8. **E-commerce Systems (Payment Gateways)**
-**Problem**: An e-commerce platform needs to integrate with different payment providers (PayPal, Stripe, Square), each with its own API for processing payments.
+An e-commerce platform needs to integrate with different payment providers (PayPal, Stripe, Square), each with its own API for processing payments.
 A payment processor can use an abstract factory to generate objects like `PaymentProcessor`, `PaymentDetails`, and `Transaction` based on the selected payment gateway (e.g., `PayPalFactory`, `StripeFactory`, `SquareFactory`).
 9. **Security Systems (Authentication Methods)**
-**Problem**: A security system needs to support various authentication methods (OAuth, SAML, LDAP) for different services.
+A security system needs to support various authentication methods (OAuth, SAML, LDAP) for different services.
 An authentication system can create a family of related objects like `Authenticator`, `TokenValidator`, and `SessionManager` for each method (e.g., `OAuthFactory`, `SAMLFactory`, `LDAPFactory`).
 10. **Smart Home Systems (Device Communication)**
-**Problem**: A smart home platform supports different types of devices (lights, thermostats, cameras) from various manufacturers, each with its own communication protocol (Zigbee, Z-Wave, Wi-Fi).
+A smart home platform supports different types of devices (lights, thermostats, cameras) from various manufacturers, each with its own communication protocol (Zigbee, Z-Wave, Wi-Fi).
 The system could use an abstract factory to create device-specific objects like `LightControl`, `ThermostatControl`, and `CameraControl` for each communication protocol (e.g., `ZigbeeFactory`, `ZWaveFactory`, `WifiFactory`).
 
 ---
