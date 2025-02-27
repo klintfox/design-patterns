@@ -1,7 +1,12 @@
-package com.klinux.payment;
+package com.klinux.payment.factory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.klinux.payment.PaymentProcessor;
+import com.klinux.payment.processor.CreditCardProcessor;
+import com.klinux.payment.processor.PayPalProcessor;
+import com.klinux.payment.processor.StripeProcessor;
 
 @Component
 public class PaymentProcessorFactory {

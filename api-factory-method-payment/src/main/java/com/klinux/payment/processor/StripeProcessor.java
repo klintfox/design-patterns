@@ -1,6 +1,8 @@
-package com.klinux.payment;
+package com.klinux.payment.processor;
 
 import org.springframework.stereotype.Component;
+
+import com.klinux.payment.PaymentProcessor;
 
 @Component
 public class StripeProcessor implements PaymentProcessor {

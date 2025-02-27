@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.klinux.payment.PaymentProcessor;
-import com.klinux.payment.PaymentProcessorFactory;
+import com.klinux.payment.factory.PaymentProcessorFactory;
 
 @ExtendWith(MockitoExtension.class)
 public class PaymentServiceTest {

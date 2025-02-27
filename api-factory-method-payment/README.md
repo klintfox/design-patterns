@@ -13,6 +13,35 @@ This project demonstrates the **Factory Method Pattern** in a payment processing
 ## Project Structure
 
 The project is organized as follows:
+```
+├───main
+│   ├───java
+│   │   └───com
+│   │       └───klinux
+│   │           │   PaymentApplication.java  (Main App)
+│   │           │
+│   │           ├───controller
+│   │           │       PaymentController.java
+│   │           │
+│   │           ├───payment
+│   │           │   ├───factory
+│   │           │   │       PaymentProcessorFactory.java
+│   │           │   ├───processor
+│   │           │   │       CreditCardProcessor.java
+│   │           │   │       PayPalProcessor.java
+│   │           │   │       StripeProcessor.java
+│   │           │   └───PaymentProcessor.java  (Interface)
+│   │           │
+│   │           └───service
+│   │                   PaymentService.java
+│   │
+│   └───resources
+│       │   application.properties
+│       │
+│       ├───static
+│       └───templates
+└───test
+```
 
 ### 1. **PaymentProcessor Interface**
 

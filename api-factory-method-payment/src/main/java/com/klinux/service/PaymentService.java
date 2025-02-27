@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.klinux.payment.PaymentProcessor;
-import com.klinux.payment.PaymentProcessorFactory;
+import com.klinux.payment.factory.PaymentProcessorFactory;
 
 @Service
 public class PaymentService {
