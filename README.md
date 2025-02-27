@@ -61,9 +61,10 @@ Used to create different types of loggers (e.g., file logger, database logger, o
 The factory method is used to instantiate database connection objects (e.g., MySQL, PostgreSQL, Oracle) dynamically, enabling the application to work with different database types and manage connections efficiently.
 3. Payment Processing Systems
 A payment gateway might support multiple payment methods (credit card, PayPal, Stripe). The factory method helps decide which payment processor to instantiate based on user selection or configuration.
-[Example of Payment using Factory Method Pattern](https://github.com/klintfox/design-patterns/tree/main/api-factory-method-payment)
+[Payment Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method-payment)
 4. Document Generation Systems
 In enterprise applications that generate various document formats (PDF, Excel, Word), a factory method can be used to dynamically create the appropriate document type objects, ensuring proper formatting and structure for each type.
+[Document Generation Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method-document-generation)
 5. Notification Systems
 For sending notifications (email, SMS, push notifications), the factory method can be used to create specific notification objects based on the required communication channel, providing flexibility in how notifications are sent.
 6. UI Frameworks
