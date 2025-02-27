@@ -44,8 +44,8 @@ A singleton pattern can be applied to manage shared resources, such as printer m
 
 ### 2. Factory Method Pattern
 
-- **What it is:**  
-  The Factory Method Pattern defines an interface for creating objects, but allows subclasses to decide the exact class of object to create.
+- **What it is:**
+   Defines an interface for creating a *single object*, but lets subclasses decide which class to instantiate. It focuses on *one product* and delegates the instantiation to subclasses.
 
 - **Purpose:**  
   To delegate object instantiation to subclasses, allowing for more flexible and dynamic creation of objects.
@@ -77,10 +77,9 @@ In applications that need to handle different file formats (CSV, XML, JSON), the
 In enterprise resource planning (ERP) or manufacturing systems, a factory method can be used to create objects representing different types of products (e.g., electronic, mechanical) based on production needs, enhancing flexibility in production line management.
 10. **Cloud Service Providers**
 Cloud systems may support multiple cloud providers (AWS, Azure, Google Cloud). A factory method can dynamically create the correct cloud service client, ensuring the application interacts with the right provider’s API based on configuration.
-
-- **Others Examples**
+11. **GUI Frameworks**
 A UI framework might have a method to create buttons. The exact type of button, such as `WindowsButton` or `MacButton`, would be determined by the operating system and handled by subclasses.
-[Example of Button using Factory Method Pattern](https://github.com/klintfox/design-patterns/tree/main/api-factory-method)
+[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method)
 ---
 
 ### 3. Abstract Factory Pattern
