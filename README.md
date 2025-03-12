@@ -20,23 +20,32 @@ This repository explores several **creational design patterns**, which are used 
 - **Examples:**
 1. **Database Connection Pooling**
 A singleton ensures there is only one instance of the database connection pool in the application, providing a centralized point for managing database connections and reducing the overhead of creating multiple connections.
+
 2. **Configuration Management**
 In large enterprise applications, a singleton can be used to store and manage configuration settings globally, ensuring that all components access the same configuration object and preventing inconsistencies.
+
 3. **Logging Systems**
 A singleton logger is used across an application to ensure that only one instance handles log writing, reducing the complexity of managing multiple loggers and ensuring consistency in logging output.
-[Example Logging Systems - Singleton Pattern](https://github.com/klintfox/design-patterns/tree/main/api-singleton-logger)
+[Example Logging Systems - Singleton Pattern](https://github.com/klintfox/design-patterns/tree/main/singleton-logger)
+
 4. **Cache Management**
 A singleton can be used to manage a global cache in an enterprise application, allowing all components to share the same cache instance and reduce the overhead of maintaining multiple caches.
+
 5. **Session Management**
 In web applications, a singleton can manage user sessions, ensuring that there is a single session manager responsible for handling user sessions across the application, preventing session duplication.
+
 6. **Thread Pooling**
 The singleton pattern is used for managing a thread pool where a single instance is responsible for managing and providing access to a pool of reusable threads for concurrent tasks.
+
 7. **Application State Management**
 In enterprise applications, a singleton can be used to manage global application state, ensuring that all parts of the application interact with the same instance and have a consistent view of the state.
+
 8. **Event Bus**
 A singleton event bus or message bus can be used to manage communication between different parts of an application, ensuring that all components share the same event bus for decoupled and consistent message passing.
+
 9. **Security Token Management**
 In security-heavy applications, a singleton can be used to manage a global security token or authentication manager, ensuring a single, consistent instance handles authentication and authorization across the system.
+
 10. **Resource Managers (e.g., Printer, File System)**
 A singleton pattern can be applied to manage shared resources, such as printer management or file system access, to ensure that there is a single instance controlling access to these shared resources, avoiding conflicts and resource contention.
 
@@ -57,29 +66,39 @@ A singleton pattern can be applied to manage shared resources, such as printer m
 - **Examples:**  
 1. **Logging Systems**
 Used to create different types of loggers (e.g., file logger, database logger, or console logger) based on configuration, allowing flexible logging strategies in large-scale applications.
+
 2. **Database Connection Pooling**
 The factory method is used to instantiate database connection objects (e.g., MySQL, PostgreSQL, Oracle) dynamically, enabling the application to work with different database types and manage connections efficiently.
+
 3. **Payment Processing Systems**
 A payment gateway might support multiple payment methods (credit card, PayPal, Stripe). The factory method helps decide which payment processor to instantiate based on user selection or configuration.
-[Payment Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method-payment)
+[Payment Example](https://github.com/klintfox/design-patterns/tree/main/factory-method-payment)
+
 4. **Document Generation Systems**
 In enterprise applications that generate various document formats (PDF, Excel, Word), a factory method can be used to dynamically create the appropriate document type objects, ensuring proper formatting and structure for each type.
-[Document Generation Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method-document-generation)
+[Document Generation Example](https://github.com/klintfox/design-patterns/tree/main/factory-method-document-generation)
+
 5. **Notification Systems**
 For sending notifications (email, SMS, push notifications), the factory method can be used to create specific notification objects based on the required communication channel, providing flexibility in how notifications are sent.
+
 6. **UI Frameworks**
 In cross-platform applications, a factory method can create platform-specific UI components (e.g., buttons, text fields) based on the operating system (Windows, Mac, Linux), allowing the application to adapt its UI without changing business logic.
+
 7. **Report Generation Tools**
 For generating different types of reports (e.g., financial, sales, inventory), a factory method can be used to generate the appropriate report format, offering the flexibility to create different types based on the user’s choice or configuration.
+
 8. **File Parsing and Processing**
 In applications that need to handle different file formats (CSV, XML, JSON), the factory method can create file parser objects dynamically based on the file type, ensuring the correct processing logic is applied.
+
 9. **Product Manufacturing Systems**
 In enterprise resource planning (ERP) or manufacturing systems, a factory method can be used to create objects representing different types of products (e.g., electronic, mechanical) based on production needs, enhancing flexibility in production line management.
+
 10. **Cloud Service Providers**
 Cloud systems may support multiple cloud providers (AWS, Azure, Google Cloud). A factory method can dynamically create the correct cloud service client, ensuring the application interacts with the right provider’s API based on configuration.
+
 11. **GUI Frameworks**
 A UI framework might have a method to create buttons. The exact type of button, such as `WindowsButton` or `MacButton`, would be determined by the operating system and handled by subclasses.
-[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/api-factory-method)
+[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/factory-method-ui-framework)
 ---
 
 ### 3. Abstract Factory Pattern
@@ -98,31 +117,40 @@ A UI framework might have a method to create buttons. The exact type of button, 
 1. **GUI Frameworks (Cross-Platform UI)**
 Different platforms (Windows, macOS, Linux) have different UI components (buttons, text fields, etc.) that need to be created with a platform-specific style.
 A GUI framework can use an abstract factory to create buttons, text fields, and other UI elements tailored to the operating system (e.g., `WindowsFactory`, `MacFactory`, `LinuxFactory`).
-[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/api-abstract-factory-gui-framework)
+[Gui Framework Example](https://github.com/klintfox/design-patterns/tree/main/abstract-factory-gui-framework)
+
 2. **Game Engines (Cross-Platform Games)**
 A game needs to render graphics, sound, and input on different platforms (PC, Xbox, PlayStation) with different hardware and APIs.
 A game engine can use abstract factories like `GraphicsFactory`, `SoundFactory`, `InputFactory` to provide platform-specific implementations (e.g., DirectX, OpenGL, PlayStation SDK).
+
 3. **Database Connectivity (Multiple Databases)**
 An application needs to interact with multiple types of databases (MySQL, PostgreSQL, Oracle), where each database has different ways to connect, query, and manage transactions.
 The abstract factory can create a family of objects like `Connection`, `Command`, and `Transaction` for each database type (e.g., `MySQLFactory`, `PostgreSQLFactory`, `OracleFactory`).
+
 4. **Web Development (Cross-Browser Compatibility)**
 Different browsers (Chrome, Firefox, Safari) may need different approaches to render elements or interact with JavaScript.
 A web framework could define an abstract factory to create browser-specific objects like `DOMManipulator`, `EventListener`, and `CSSRenderer`.
+
 5. **Document Processing (Different Formats)**
 A document processing application needs to generate or manipulate documents in different formats like PDF, DOCX, or HTML.
 An abstract factory could be used to produce objects like `Page`, `Header`, `Footer` that work differently based on the document format (e.g., `PDFFactory`, `DOCXFactory`, `HTMLFactory`).
+
 6. **Reporting Systems (Different Report Types)**
 A system needs to generate various report types such as CSV, PDF, or Excel, each requiring different rendering logic.
 An abstract factory could create objects like `ReportHeader`, `ReportBody`, and `ReportFooter` that are specific to each report format (e.g., `CSVReportFactory`, `PDFReportFactory`, `ExcelReportFactory`).
+
 7. **Network Protocols (Multiple Protocols)**
 An application needs to interact with multiple communication protocols such as HTTP, FTP, and WebSocket.
 An abstract factory can define methods to create protocol-specific objects, like `Request`, `Response`, and `Connection` for each protocol (e.g., `HTTPFactory`, `FTPFactory`, `WebSocketFactory`).
+
 8. **E-commerce Systems (Payment Gateways)**
 An e-commerce platform needs to integrate with different payment providers (PayPal, Stripe, Square), each with its own API for processing payments.
 A payment processor can use an abstract factory to generate objects like `PaymentProcessor`, `PaymentDetails`, and `Transaction` based on the selected payment gateway (e.g., `PayPalFactory`, `StripeFactory`, `SquareFactory`).
+
 9. **Security Systems (Authentication Methods)**
 A security system needs to support various authentication methods (OAuth, SAML, LDAP) for different services.
 An authentication system can create a family of related objects like `Authenticator`, `TokenValidator`, and `SessionManager` for each method (e.g., `OAuthFactory`, `SAMLFactory`, `LDAPFactory`).
+
 10. **Smart Home Systems (Device Communication)**
 A smart home platform supports different types of devices (lights, thermostats, cameras) from various manufacturers, each with its own communication protocol (Zigbee, Z-Wave, Wi-Fi).
 The system could use an abstract factory to create device-specific objects like `LightControl`, `ThermostatControl`, and `CameraControl` for each communication protocol (e.g., `ZigbeeFactory`, `ZWaveFactory`, `WifiFactory`).
@@ -183,6 +211,7 @@ Examples: `SmallHouseBuilder`, `LargeHouseBuilder`, `LuxuryHouseBuilder`.
 When setting up a software application, different configurations may be required (user permissions, UI settings, database connection settings, etc.). A configuration builder allows the app to be set up step by step with various options.  
 Examples: `DatabaseConfigBuilder`, `UIConfigBuilder`, `UserPermissionsBuilder`.
 
+---
 
 ### 5. Prototype Pattern
 

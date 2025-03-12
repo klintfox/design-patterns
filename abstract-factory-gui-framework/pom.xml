@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.klinux</groupId>
-	<artifactId>api-factory-method-payment</artifactId>
+	<artifactId>abstract-factory-gui-framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-factory-method-payment</name>
+	<name>abstract-factory-gui-framework</name>
 	<description>Example using Factory Method Design Patern por Payment</description>
 	<url/>
 	<licenses>
@@ -34,20 +34,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		 <dependency>
-	        <groupId>org.springframework.boot</groupId>
-	        <artifactId>spring-boot-starter</artifactId>
-	    </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-	        <groupId>org.springframework</groupId>
-	        <artifactId>spring-context</artifactId>
-	    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
