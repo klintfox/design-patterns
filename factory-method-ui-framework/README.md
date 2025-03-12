@@ -1,4 +1,4 @@
-# Factory Method UI Framework
+# UI Framework - Factory Method Pattern
 
 ## Overview
 

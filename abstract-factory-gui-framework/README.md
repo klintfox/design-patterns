@@ -1,4 +1,4 @@
-# GUI Abstract Factory Pattern Example
+# GUI Framework  - Abstract Factory Pattern
 
 This is a simple example demonstrating the **Abstract Factory Pattern** in a Spring Boot application. The goal of this example is to create a cross-platform GUI framework that provides platform-specific UI components, such as buttons and text fields.
 

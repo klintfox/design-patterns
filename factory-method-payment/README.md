@@ -1,4 +1,4 @@
-# Payment Processing System - Factory Method Pattern Example
+# Payment Processing System - Factory Method Pattern
 
 This project demonstrates the **Factory Method Pattern** in a payment processing system built with **Spring Boot** and **Java 17**. The Factory Method pattern is used to instantiate different payment processors (such as **CreditCard**, **PayPal**, and **Stripe**) based on the user's selection or configuration.
 

@@ -1,4 +1,4 @@
-# Car Manufacturing 
+# Car Manufacturing - Builder Pattern
 
 ## Use Case
 We have a car manufacturing company that needs to build cars with different configurations such as:

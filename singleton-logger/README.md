@@ -1,4 +1,4 @@
-# Singleton Pattern in Spring Boot Application
+# Logging System - Singleton Pattern
 
 ## Explanation of Code
 
